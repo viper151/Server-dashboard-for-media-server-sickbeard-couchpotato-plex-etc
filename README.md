@@ -24,6 +24,12 @@ git clone https://github.com/viper151/Server-dashboard-for-media-server-sickbear
 
 2) Add your username, hostname, sickbeard folder and the correct ports in config.php
 
+#Integrate with Muximux
+
+Can easily be integrated with Muximux (https://github.com/mescon/Muximux) by simply adding the url of your dashboard into Muximux's settings
+![alt text](http://i.imgur.com/qvc8eHr.png)
+
+
 #Feature Requests
 - Add more services
 - Settings menu
