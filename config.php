@@ -6,8 +6,6 @@ $sbport="8081";
 $shellport="4200";
 $cpport="5050";
 $plexport="32400";
-
-
 //Parameters
-$services=array("sickbeard","plexmediaserver","shellinaboxd", "rtorrent",	"couchpotato");
+$services=array("sickbeard","plexmediaserver","shellinaboxd", "rtorrent", "couchpotato", "transmission");
 ?>
