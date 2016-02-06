@@ -12,7 +12,8 @@ if(isset($_GET["service"]) && !empty($_GET["service"])) {
 
 	if ($_GET["service"]==="shellinaboxd" || $_GET["service"]==="plexmediaserver") {
 		$specificmessage="sudo service ". $_GET["service"]." ".$_GET["action"]." 2>&1;";
-
+	} else if ($_GET["service"]==="transmission") {
+		$specificmessage="sudo service transmission-daemon ".$_GET["action"]." 2>&1;";
 	} else {
 		$specificmessage="sudo -u ".$user." service ". $_GET["service"]." ".$_GET["action"]." 2>&1;";
 };
