@@ -1,11 +1,12 @@
 #Introduction
 This is a php-based dashboard that I created quickly to
 
-- Restart services and check their status.Works with
+- Restart services and check their status. Works with
   -  Sickbeard
   -  Couchpotato
   -  Rtorrent
   -  Plex
+  -  Transmission (thanks to Truks89)
 - See the upcoming shows from sickbeard
 - See quick server statistics (server load, hdd space and RAM)
 
@@ -23,6 +24,24 @@ git clone https://github.com/viper151/Server-dashboard-for-media-server-sickbear
 (or you can use your own folder instead of "dashboard")
 
 2) Add your username, hostname, sickbeard folder and the correct ports in config.php
+
+3) Remove the services you do not use from config.php
+
+#Add your own services
+Apart from the officially supported applications, you can add your own applications and services.
+In order to do so, you have to adjust two files.
+
+1) ajax.php 
+If the application does not have a service or does not have belong to the list of services that can be restarted with
+sudo -u $user service {servicename} start/stop
+then you need to add the following at line 15 after the closing "}"
+``` else if ($_GET["service"]==="transmission") {
+		$specificmessage="";
+	}```
+and in the $specific message, add the start/stop command for the service itself.
+
+2) config.php
+Under the $services array, make sure to add the application's name
 
 #Integrate with Muximux
 
