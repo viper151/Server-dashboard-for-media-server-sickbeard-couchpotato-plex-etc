@@ -6,7 +6,7 @@ This is a php-based dashboard that I created quickly to
   -  Couchpotato
   -  Rtorrent
   -  Plex
-  -  Transmission (thanks to Truks89)
+  -  Transmission (thanks to trusk89)
 - See the upcoming shows from sickbeard
 - See quick server statistics (server load, hdd space and RAM)
 
