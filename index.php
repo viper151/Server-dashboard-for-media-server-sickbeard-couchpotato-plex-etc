@@ -25,6 +25,7 @@
 				margin:20px 0 20px;
 				border-bottom:1px solid #eee
 			}
+			img {height:200px;}
         </style>
 		<script>
 			$( document ).ready(function() {
